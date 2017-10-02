@@ -1,5 +1,10 @@
 # Real-time audio analysis and FFT for iOS
 This library helps you visualize or process sound as it is played by providing you with a currently-played spectrum data and samples, at any given time.
+# Features
+* Provides accurate and high-resolution data, partially written in C
+* Uses Apple's (fast) implementation of FFT - `vDSP` API from the `Accelerate` framework
+* Makes use of FFT overlapping (of 512 frames) for better timing
+* Can process real-time input from the microphone too
 
 # How to use
 For playing audio files:
