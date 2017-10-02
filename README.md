@@ -10,6 +10,7 @@ This library helps you visualize or process sound as it is played by providing y
 For playing audio files:
 ## Initialization
 ```objective-c
+self.audioFile = [[AudioFile alloc] init];
 NSURL *url = [[NSBundle mainBundle] URLForResource:@"My Song" withExtension:@"mp3"];
 [self.audioFile loadAudioWithURL:url withCompletionCallback:^(NSError *error)
 {
